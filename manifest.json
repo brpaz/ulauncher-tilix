@@ -1,0 +1,27 @@
+{
+  "manifest_version": "2",
+  "api_version": "1",
+  "name": "Tilix Sessions",
+  "description": "Open your saved Tilix sessions from Ulauncher",
+  "developer_name": "Bruno Paz",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "tilix_kw",
+      "type": "keyword",
+      "name": "Tilix Sessions",
+      "description": "Open your Tilix sessions",
+      "default_value": "tilix"
+    },
+    {
+      "id": "sessions_dir",
+      "type": "input",
+      "name": "Sessions Directory",
+      "description": "The path to the directory containing your Tilix sesions",
+      "default_value": "~/.config/tilix/sessions"
+    }
+  ]
+}
